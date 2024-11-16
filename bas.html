@@ -95,6 +95,53 @@
         </p>
     </div>
     <a href="#register" class="cta-button">OSA senast 5 maj</a>
+<div id="event-info">
+  <p id="event-date" class="styled-text">7:e Juni 2025</p>
+  <div id="countdown" class="styled-text"></div>
+</div>
+
+<style>
+  /* Shared styling for countdown and static text */
+  .styled-text {
+    font-family: 'Arial, sans-serif'; /* Font style */
+    font-size: 24px; /* Font size */
+    color: black; /* Black text color */
+    text-align: center; /* Center the text */
+    background-color: transparent; /* Transparent background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+    margin: auto; /* Center horizontally */
+    padding: 10px 0; /* Padding for spacing */
+  }
+</style>
+
+<script>
+  const targetDate = new Date('2025-06-07T00:00:00'); // Set your event date here
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff > 0) {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('countdown').innerHTML = `
+        <span class="number">${days} d,</span>
+        <span class="number">${hours} h,</span>
+        <span class="number">${minutes} m,</span>
+        <span class="number">${seconds} s</span>
+      `;
+    } else {
+      document.getElementById('countdown').innerHTML = "<span class='text'>Eventet har börjat!</span>";
+    }
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+    
 </div>
 
   
