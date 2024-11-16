@@ -44,6 +44,19 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+	.event-details h2 {
+		font-size: 1.8em;
+		color: #4b4639;
+		text-align: center;
+		margin-bottom: 20px;
+}
+
+	.event-details p {
+		font-size: 1.1em;
+		text-align: center;
+		margin: 10px 0;
+}
+
         /* Knappstil */
         .cta-button {
             display: block;
@@ -60,6 +73,77 @@
 
         .cta-button:hover {
             background-color: #615745;
+        }
+
+ /* Form-modal */
+        .form-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #4b4639;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .form-container button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4b4639;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #615745;
+        }
+
+        .form-close {
+            text-align: center;
+            margin-top: 10px;
+            color: #4b4639;
+            cursor: pointer;
+        }
+
+        .form-close:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -94,7 +178,38 @@
             Missa inte detta spännande evenemang som innehåller inspirerande talare, engagerande aktiviteter och fantastiska möjligheter att knyta kontakter med andra i samhället.
         </p>
     </div>
-    <a href="#register" class="cta-button">OSA senast 5 maj</a>
+       <button class="cta-button" onclick="openForm()">OSA senast 5 maj</button>
+</div>
+
+<!-- Form Modal -->
+<div class="form-modal" id="formModal">
+    <div class="form-container">
+        <h2>OSA, fyll i en gång per gäst</h2>
+        <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/f/xqaklzzr" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Namn</label>
+    <input type="text" name="name" id="full-name" placeholder="För- och efternamn" required="">
+    <label for="attending">Kommer du att delta?</label>
+    <select name="attending" id="attending" required="">
+        <option value="" selected="" disabled="">...</option>
+        <option value="Yes">Ja</option>
+        <option value="No">Nej</option>
+    </select>
+    <label for="email-address">Mailadress</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="telephone">Telefonnummer</label>
+    <input type="telephone" name="telephone" id="telephone" placeholder="07X - XX XX XXX">
+    <label for="message">Är det något du inte äter? (dvs allergier eller specialkost)</label>
+    <textarea rows="2" name="message" id="message" placeholder="Jag äter inte..." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="RSVP">
+  </fieldset>
+  <input type="submit" value="Skicka">
+</form>
+        <div class="form-close" onclick="closeForm()">Stäng</div>
+    </div>
+</div>
+
+
 <div id="event-info">
   <p id="event-date" class="styled-text">7:e Juni 2025</p>
   <div id="countdown" class="styled-text"></div>
@@ -148,6 +263,18 @@
 <footer>
     <p>Hoppas att vi ses!</p>
 </footer>
+
+<script>
+    // Open form modal
+    function openForm() {
+        document.getElementById("formModal").style.display = "flex";
+    }
+
+    // Close form modal
+    function closeForm() {
+        document.getElementById("formModal").style.display = "none";
+    }
+</script>
 
 </body>
 </html>
