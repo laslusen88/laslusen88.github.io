@@ -1,154 +1,198 @@
 /* General Styles */
 body {
-  font-family: 'Playfair Display', serif; /* Formal and fancy font */
+  font-family: "Gelasio", serif;
   margin: 0;
   padding: 0;
-  color: #333; /* Darker text for good contrast */
-  background-color: #f9f5f0; /* Soft beige background */
-  line-height: 1.6;
-}
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://unsplash.com/photos/gF_umQbT5tM/download?force=true&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Gör bakgrunden statisk vid scroll */
+  background-repeat: no-repeat; /* Ingen upprepning */
+  color: #fdfdfd; /* Vit text för kontrast */
 
-/* Header Section */
+}
 header.hero {
-  background-color: #fff; /* White background for hero section */
-  color: #5a4a3f; /* A muted, elegant dark color */
+  height: 100vh;
+  color: #fdfdfd; /* Vit text för bättre kontrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 2em 1em;
-  border-bottom: 1px solid #ddd;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Subtil textskugga */
 }
 
 header.hero h1 {
-  font-size: 3rem;
-  margin: 0.5em 0;
+  font-size: 4rem;
+  margin: 0.5rem 0;
+  color: #fdfdfd; /* Behåll vit text */
 }
 
 header.hero p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fdfdfd; /* Vit text för enhetlighet */
+}
+
+#countdown {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #d7c9e6; /* Ljust lila */
+  color: #030905; /* Mörk grönsvart */
+  border-radius: 5px;
   font-size: 1.2rem;
-  margin: 0.5em 0;
+  text-shadow: none;
 }
 
-/* Navigation Bar */
 nav {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 1rem 0;
   margin: 0;
 }
-
 nav ul li {
-  margin: 0 1em;
+  margin: 0 1rem;
 }
-
 nav ul li a {
   text-decoration: none;
   font-size: 1rem;
-  color: #5a4a3f; /* Elegant dark color for links */
+  color: #333; /* Mörk brun */
+  font-weight: bold;
   transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
-  color: #8c6c53; /* A softer color for hover effect */
+  color: #88b38a; /* Mjukt grönt */
 }
-
-/* Section Styling */
+/* Sections */
 section {
-  padding: 2em 1em;
-  margin: 2em auto;
+  padding: 3rem 1rem;
+  margin: 3rem auto;
   max-width: 800px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #fdfdfd; /* Krämvitt */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 section h2 {
-  font-size: 2rem;
   text-align: center;
-  color: #5a4a3f;
+  color: #333; /* Mörk brun */
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-
-section p, section li, section label {
-  font-size: 1rem;
-  color: #333;
+section p, section li {
+  font-size: 1.1rem;
+  color: #030905; /* Mörk grönsvart */
 }
-
-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-section ul li {
-  margin: 0.5em 0;
-}
-
-/* Form Styles */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-form label {
+.cont-btn {
+  padding: 1rem 2rem;
+  background-color: #88b38a; /* Mjukt grönt */
+  color: #fdfdfd; /* Krämvitt */
+  font-size: 1.2rem;
   font-weight: bold;
-}
-
-form input, form select, form button {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  padding: 0.5em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-form input:focus, form select:focus {
-  border-color: #8c6c53;
-  outline: none;
-}
-
-form button {
-  background-color: #8c6c53;
-  color: #fff;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
-
-form button:hover {
-  background-color: #5a4a3f;
+.cont-btn:hover {
+  background-color: #030905; /* Mörk grönsvart */
 }
 
-/* Footer Styles */
+#backToTop {
+  position: fixed; /* Gör att knappen följer med vid scroll */
+  bottom: 2rem; /* Placering nere höger */
+  right: 2rem;
+  transform: translateY(-50%); /* justera position för att verkligen centrera */
+  background-color: rgba(51, 51, 51, 0.6); /* En transparent brun färg */
+  color: rgba(255, 255, 255, 0.6); /* Textfärg */
+  border: none;
+  border-radius: 50%; /* Gör knappen rund */
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem; /* Gör pilen större */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtil skugga */
+  display: none; /* Döljer knappen initialt */
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease; /* Liten fade-effekt */
+}
+
+#backToTop:hover {
+  background-color: rgba(51, 51, 51, 0.9); /* Ändrar färg vid hovring */
+  color: rgba(255, 255, 255, 0.9); /* Textfärg */
+}
+
+
+
+/* Footer */
 footer {
-  background-color: #fff;
+  background-color: rgba(3, 9, 5, 0.5); /* Mörk transparent grönsvart */
+  color: #fdfdfd; /* Krämvitt */
   text-align: center;
-  padding: 1em 0;
-  margin-top: 2em;
-  font-size: 0.9rem;
-  color: #5a4a3f;
-  border-top: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 2rem;
 }
+
 
 /* Responsive Design */
+
 @media (max-width: 768px) {
   header.hero h1 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 1.5em;
+    font-size: 2.5rem;
   }
 
   nav ul {
     flex-direction: column;
+    padding: 0;
     align-items: center;
   }
 
   nav ul li {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  iframe, form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #backToTop {
+    border: 2px solid red;
+    padding: 0.6rem 0.8rem;
+    bottom: calc(5%+10px);
+    right: calc(5%+10px);
+    font-size: 0.8rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 1.5rem;
+    max-width: 90%;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p, section li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  ul {
+    padding-left: 1rem;
   }
 }
