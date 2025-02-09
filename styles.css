@@ -72,7 +72,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #88b38a; /* Mjukt grönt */
 }
+
+
 /* Sections */
+
 section {
   padding: 3rem 1rem;
   margin: 3rem auto;
@@ -81,16 +84,20 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 section h2 {
   text-align: center;
   color: #333; /* Mörk brun */
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 section p, section li {
   font-size: 1.1rem;
   color: #030905; /* Mörk grönsvart */
 }
+
+
 .cont-btn {
   padding: 1rem 2rem;
   background-color: #88b38a; /* Mjukt grönt */
@@ -105,10 +112,81 @@ section p, section li {
   background-color: #030905; /* Mörk grönsvart */
 }
 
+
+/* Accordion */
+.accordion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #555;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: rgba(51, 51, 51, 1);
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gelasio", serif; 
+}
+
+.accordion-header:hover {
+  background-color: transparent;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.accordion-icon {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.accordion-body {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0 20px;
+  max-height: 0; /* Döljer innehållet från början */
+  transition: max-height 0.2s ease, padding 0.2s ease; /* Animera både max-height och padding */
+}
+
+.accordion-body p {
+  margin: 15px 0;
+}
+
+/* Open State */
+.accordion-item.is-active .accordion-body {
+  padding: 15px 20px; /* Lägg till padding när den är öppen */
+}
+
+.accordion-item.is-active .accordion-icon {
+  transform: rotate(45deg); /* Gör "+" till "x" */
+}
+
+
+/* osa */
+.osa {
+
+}
+
+  .sm {
+    display: none;
+  }
+
+
 #backToTop {
-  position: fixed; /* Gör att knappen följer med vid scroll */
-  bottom: 2rem; /* Placering nere höger */
-  right: 2rem;
+  position: fixed !important; /* Gör att knappen följer med vid scroll */
+  bottom: 10%; /* Placering nere höger */
+  right: 5%;
+  z-index: 9999;
   transform: translateY(-50%); /* justera position för att verkligen centrera */
   background-color: rgba(51, 51, 51, 0.6); /* En transparent brun färg */
   color: rgba(255, 255, 255, 0.6); /* Textfärg */
@@ -130,7 +208,14 @@ section p, section li {
   color: rgba(255, 255, 255, 0.9); /* Textfärg */
 }
 
-
+#tal{
+  background-color: transparent;
+  padding: 1rem 1rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: none;
+}
 
 /* Footer */
 footer {
@@ -150,8 +235,8 @@ footer {
   }
 
   nav ul {
-    flex-direction: column;
-    padding: 0;
+    flex-direction: row;
+    padding: 0.7rem 0.5rem 0.7rem;
     align-items: center;
   }
 
@@ -160,7 +245,7 @@ footer {
   }
 
   nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 0.8rem 0.5rem;
   }
 
@@ -169,12 +254,15 @@ footer {
     margin: 0 auto;
   }
 
+
   #backToTop {
-    border: 2px solid red;
+    border: none;
     padding: 0.6rem 0.8rem;
     bottom: calc(5%+10px);
     right: calc(5%+10px);
     font-size: 0.8rem;
+    width: 25px;
+    height: 25px;
   }
 
   section {
@@ -195,4 +283,20 @@ footer {
   ul {
     padding-left: 1rem;
   }
+
+
+  .lg {
+    display: none;
+  }
+
+  .sm {
+    display: block;
+  }
+
+
+.cont-btn:hover {
+  background-color: #88b38a; /* Mörk grönsvart */
+}
+
+
 }
