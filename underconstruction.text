@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markus och Stinas Bröllop</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="hero">
+<h1>Hej!</h1>
+<p>Inom kort kommer vår hemsida att finnas uppe, tack för tålamodet!</p>
+      <p>Tid kvar till vigseln:</p>
+    <div id="countdown"></div>
+      </header>
+
+  
+  <!-- Countdown Script -->
+  <script>
+    const targetDate = new Date('2025-06-07T15:00:00');
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else {
+        document.getElementById('countdown').innerHTML = "Nu är det dags!";
+      }
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+      
+</body>
+</html>

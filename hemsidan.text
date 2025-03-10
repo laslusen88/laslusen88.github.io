@@ -26,44 +26,136 @@
   <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="#general-info">Information</a></li>
-      <li><a href="#schedule">Schema</a></li>
-      <li><a href="#map">Plats</a></li>
-      <li><a href="#rsvp">OSA</a></li>
+      <li><a href="#vigsel">Vigsel</a></li>
+      <li><a href="#fest">Middag och fest</a></li>
       <li><a href="#faq">Bra att veta</a></li>
+      <li><a href="#rsvp">OSA</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
   </nav>
 
 
   <!-- General Info Section -->
-  <section id="general-info">
-    <h2>Allmän information</h2>
-    <p>En vecka in i Juni planerar vi att säga "ja" till varandra och hoppas att ni ska kunna vara med och dela dagen med oss!</p>
-    <p>Vigseln kommer att hållas i Aspås Kyrka, belägen ca 400 m.ö.h. Vi håller tummarna för klart väder, så att vi får chans att se fjällutsikten från byn.</p>
-    <p>Bröllopsfesten firar vi därefter på danslogen vid bygdegården i grannbyn Aspåsnäset, där delar av Stinas familj bor </p>
-    <p>För er som kommer från andra delar av landet är det lättast att hitta boende inne i Östersund. Vi planerar att samordna transport ut till Aspås, mellan kyrka och festlokal, samt in till Östersund efter bröllopsfesten.</p>
+  <section id="vigsel">
+    <img src="kyrka.jpg" alt="Aspås Kyrka" width="100%" height="auto">
+    <h2>Vigsel</h2>
+    <p>15.00 - Vigsel i Aspås Kyrka</p>
+    <p>Klockan tre börjar vår vigsel i Aspås kyrka. För er som är intresserade kommer det att finnas möjlighet att åka buss från centrala Östersund ut till kyrkan, och därefter vidare till festlokalen. Mer detaljer om vilken tid och varifrån den avgår kommer inom kort.</p>
+    <p>Adress: Kyrkvallen 2, 835 94 Aspås</p>
   </section>
 
 
   <!-- Schedule Section -->
-  <section id="schedule">
-    <h2>Schema</h2>
-    <ul>
-      <p><strong>14:15:</strong> Buss går mot Aspås kyrka</p>
-      <p><strong>15:00:</strong> Vigsel</p>
-      <p><strong>16:30:</strong> Mingel</p>
-      <p><strong>17:00:</strong> Brudskål</p>
-      <p><strong>17:30:</strong> Middag</p>
-      <p><strong>02:00:</strong> Buss från festlokalen in till centrala Östersund</p>
-    </ul>
+  <section id="fest">
+ <iframe src="https://www.google.com/maps/embed?pb=!4v1739661928891!6m8!1m7!1sO46OswLHaIGh4FWJNXJTKg!2m2!1d63.34047099920818!2d14.58151191581868!3f22.74830624533463!4f1.087591714741464!5f0.7820865974627469" 
+      width="100%"
+      height="250" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <h2>Middag och fest</h2>
+    <p>Från ca 16.30 - Mingel, middag och fest på Aspåsnäsets dansbana</p>
+    <p>Efter vigseln tar vi oss till grannbyn Aspåsnäset, där stora delar av Stinas familj bor. Väl där vankas mingel, middag och fest på dansbanan. Den vita byggnaden är Aspåsnäsets bygdegård, dansbanan hittar ni precis bakom bygdegården.</p>
   </section>
 
 
-  <!-- Map Section -->
-  <section id="map">
-    <h2>Plats</h2>
-    <p>Här hittar du de viktiga platserna för dagen:</p>
+
+  <!-- FAQ Section -->
+
+  <section id="faq">
+  <h2>Bra att veta</h2>
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Klädkod</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Sommarfin klädsel! Ingen strikt klädkod, men gärna lite uppklätt. Vill ni slå på stort med klädsel är det också helt okej, men undvik gärna enfärgad vit eller röd klänning (inga problem med detaljer eller accessoarer i färgerna). Tänk gärna på att ta med något varmt (och eventuellt regnjacka) då det kan bli kyligt framåt kvällen.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Boende</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Vi rekommenderar att ni som bor på annan ort bokar boende i Östersund. På Clarion hotell finns en bokningskod “MARKUSOCHSTINA” som ger ca 10% rabatt på ordinarie pris. Om ni stannar många nätter finns dock ofta olika erbjudanden, vi rekommenderar att kolla om ni kan få ännu bättre pris på det sättet!</p>
+          <p>Det finns många andra ställen att bo på, hotell i olika prisklasser och vandrarhem. Ett tips är också att kolla Guestit, där finns lägenheter man kan hyra på lång eller kort tid till ett billigare pris per natt än hotellrum.</p>
+</div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Transport</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Det kommer att finnas möjlighet att åka med buss mellan Östersund, kyrka och festlokal, samt tillbaka till Östersund på natten. Man måste inte anmäla sig för att få åka med, men om ni är intresserade av detta får ni gärna nämna det i er OSA så blir det lättare för oss att planera. Mer detaljer kommer!</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Gåvor</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Vi har under åren ihop samlat på oss de flesta saker vi behöver (och har plats för). Vi vet också att många av er kommer att lägga en hel del pengar på resor, logi och andra omkostnader för att vara med oss och fira. För oss är er närvaro under dagen den finaste gåvan vi kan få! Om ni absolut vill ge oss något blir vi glada för bidrag till bröllopsresa och vårt fortsatta liv ihop.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Får barn följa med?</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Vi har inget emot att barn följer med och firar! I anslutning till festlokalen finns en liten lekplats som kan vara rolig för både stora och små. Vi planerar dock inga aktiviteter specifikt för barn och det kommer att serveras alkohol till middag och fest, så ni föräldrar får själva avgöra om det passar för barnen att följa med eller inte. Vi vill också gärna veta om barnen följer med så att vi kan anpassa bordsplaceringen och liknande så bra som möjligt.
+</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Tal</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Om du vill hålla tal, uppträda eller spexa får du gärna anmäla det nedan, antingen genom att fylla i formuläret vi länkar till längst ned på sidan eller genom att kontakta våra toastmasters. Vi ser inte anmälan utan informationen skickas direkt till dem. Vi har flera härliga vänner och familjemedlemmar som är duktiga talare, så tänk gärna på att hålla er relativt kort. Max 5 minuter brukar vara lagom, så hinner vi med alla talare innan det blir alltför sent.</p>
+          <p>Vid frågor når du toastmaster via: stinaochmarkustal@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="accordion" data-accordion>
+      <div class="accordion-item">
+        <button class="accordion-header" data-title>
+          <strong>Karta</strong>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body" data-content>
+          <p>Här hittar du de viktiga platserna för dagen:</p>
   <div style="width: 100%; height: 500px;">
     <!-- Paste the iframe code below -->
 
@@ -75,11 +167,14 @@
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+        </div>
+      </div>
+    </div>
+
 
   </section>
-
-
-
+  
+  
   <!-- RSVP Section -->
   <section id="rsvp">    
   <div class="osa lg">
@@ -97,102 +192,23 @@
     <div style="text-align: center;">
     <p>Låt oss veta om du kan komma genom att fylla i detta formulär:</p>
     <p><a href="https://forms.gle/nV2bYUVrei5KsVdz7" class="cont-btn" target="_blank" rel="noopener noreferrer">OSA</a>  </p>
+    <p>Senast 1/5 behöver vi få ditt svar!</p>
   </section>
 
 
-
-  <!-- FAQ Section -->
-
-  <section id="faq">
-  <h2>Bra att veta</h2>
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Klädkod</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Sommarfin klädsel! Ingen strikt klädkod, men gärna lite uppklätt. Vill ni slå på stort med klädsel är det också helt okej, men undvik gärna enfärgad vit eller röd klänning (inga problem med detaljer eller accesoarer i färgerna). Tänk gärna på att ta med något varmt och eventuellt regnjacka då det kan bli kyligt framåt kvällen.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Boende</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Vi rekommenderar att ni som bor på annan ort bokar boende i Östersund. På Clarion hotell finns en bokningskod “MARKUSOCHSTINA” som ger ca 10% rabatt på ordinarie pris. Om ni stannar många nätter finns dock ofta olika erbjudanden, vi rekommenderar att kolla om ni kan få ännu bättre pris på det sättet!</p>
-          <p>Det finns många andra ställen att bo på, hotell i olika klasser och vandrarhem. Ett tips är också att kolla Guestit, där finns lägenheter man kan hyra på lång eller kort tid till billigare pris än hotellrum.</p>
-</div>
-      </div>
-    </div>
-
-
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Transport</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Det kommer att finnas möjlighet att åka med buss mellan Östersund, kyrka och festlokal, samt tillbaka till Östersund på natten. Uppge gärna i OSA om ni är intresserade av detta, men det är inget krav på anmälan.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Gåvor</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Vi har under åren ihop samlat på oss de flesta saker vi behöver (och har plats för). Vi vet också att många av er kommer att lägga en hel del pengar på resor, logi och andra omkostnader för att vara med oss och fira. För oss är er närvaro under dagen den finaste gåvan vi kan få! Om ni absolut vill ge oss något blir vi glada för bidrag till bröllopsresa och vårt fortsatta liv ihop, men det är inget vi förväntar oss.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Får barn följa med?</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Vi har inget emot att barn följer med och firar! I anslutning till festlokalen finns en liten lekplats som kan vara rolig för både stora och små. Vi planerar dock inga aktiviteter specifikt för barn och det kommer att serveras alkohol till middag och fest, så ni föräldrar får själva avgöra om det passar för barnen att följa med eller inte.
-</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="accordion" data-accordion>
-      <div class="accordion-item">
-        <button class="accordion-header" data-title>
-          <strong>Tal</strong>
-          <span class="accordion-icon">+</span>
-        </button>
-        <div class="accordion-body" data-content>
-          <p>Vill du hålla ett tal? Anmäl det genom att fyll i formuläret vi länkar till nedan, eller genom att kontakta toastmaster: XYZ </p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  
 
 <!-- Contact Section -->
   <section id="contact">
     <h2>Kontakt</h2>
-    <p>Om du har andra frågor, kontakta oss gärna:</p>
-    <p><strong>Email:</strong> markusochstina@gmail.com</p>
-    <p><strong>Telefon:</strong> 072 569 89 99 (Stina) och 070 866 15 97 (Markus)</p>
+<div style="text-align: center;">
+    <p>Om du har andra frågor, kontakta oss gärna!</p>
+    <p><strong>Email:</strong>
+</p> 
+    <p>markusochstina@gmail.com</p>
+    <p><strong>Telefon:</strong>
+</p> 
+    <p>072 569 89 99 (Stina)</p> 
+    <p>070 866 15 97 (Markus)</p>
   </section>
 
 
@@ -201,6 +217,7 @@
     <div style="text-align: center;">
     <p><a href="https://forms.gle/VegmTebCqyJCNxBL8/" class="cont-btn" target="_blank" rel="noopener noreferrer">Jag vill hålla tal!</a>  </p>
   </section>
+
 
   <button id="backToTop" title="Tillbaka till toppen">&#8593;</button>
 
@@ -372,3 +389,6 @@ document.querySelectorAll('.accordion').forEach(accordion => {
 </body>
 
 </html>
+
+
+
